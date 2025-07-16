@@ -8,7 +8,9 @@ class Storage {
   addItem(newItem) {
     this.item.push(newItem);
   }
-  removeItem(itemToRemove) {}
+  removeItem(itemToRemove) {
+    this.item.remove(itemToRemove);
+  }
 }
 
 const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
